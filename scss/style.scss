@@ -1,5 +1,7 @@
 @import 'fonts';
 
+@import 'header';
+
 body{
 	background-color: #FAFCFF;
 }
@@ -7,7 +9,7 @@ body{
 .container{
 	max-width: 1140px;
 	margin: 0 auto;
-	padding: 15px 0px;
+	padding: 0px 15px;
 }
 
 .title{
@@ -19,7 +21,19 @@ body{
 }
 
 .text{
+	@include regular;
 	font-size: 16px;
 	line-height: 24px;
 	color: #666666;
+}
+
+.button{
+	@include bold;
+	background: #4579CB;
+	border-radius: 8px;
+	border-color: transparent;
+	padding: 13px 34px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
 }

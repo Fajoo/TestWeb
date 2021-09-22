@@ -1,0 +1,41 @@
+.header{
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-top: 25px;
+	}
+
+	&__logo{
+		@include bold;
+		text-decoration: none;
+		font-size: 36px;
+		line-height: 48px;
+		color: #4579CB;
+	}
+
+	&__nav{
+		nav{
+			display: inline-block;
+		}
+		ul{
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+		}
+	}
+
+	&__item{
+		@include bold;
+		text-decoration: none;
+		font-size: 16px;
+		line-height: 24px;
+		margin-left: 40px;
+		color: #666666;
+	}
+
+	&__btn{
+		margin-left: 35px;
+	}
+}
